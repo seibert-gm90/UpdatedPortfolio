@@ -10,8 +10,9 @@
     float: right;
 }
 
-#gabbyPhoto{
-    max-width: 100%;
+#image{
+    width: 200px;
+    height: 200px;
 }
 
 .btn-primary {
@@ -39,6 +40,10 @@
     width: 100%;
     text-align: center;
 
+}
+
+#imageAndAboutme {
+    justify-content: center;
 }
 
 .portfolioRow div {
