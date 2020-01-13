@@ -24,7 +24,7 @@ body {
   display: block;
   height: 58px;
   background-color: #444;
-  /* Give your footer an absolute position on the page - it will always be 0px from the bottom of the page, no matter where you scroll on the page */
+  /* Give your footer a fixed position on the page - it will always be 0px from the bottom of the page, no matter where you scroll on the page */
   position: fixed;
   bottom: 0;
   /* Bring your footer forward so that all other content will go behind it instead of overlapping */
@@ -45,12 +45,14 @@ body {
 #greeting {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.navbar-toggler {
-  /* display: none; */
-  /* position: absolute;
+
+/* These styles were messing up how your hamburger icon displayed so I removed them */
+/* .navbar-toggler {
+  display: none;
+  position: absolute;
   right: 0px;
-  z-index: 2; */
-}
+  z-index: 2;
+} */
 
 #image {
   width: 300px;
@@ -64,6 +66,7 @@ body {
   margin: 10px;
 }
 
-.navbar {
+/* Not sure if you wanted the navbar to be teal or not but currently the color of the navbar is set by the classes "navbar-light bg-light" on the nav element in index.html so the style below wasn't doing anything */
+/* .navbar {
   background-color: #4aaaa5;
-}
+} */
