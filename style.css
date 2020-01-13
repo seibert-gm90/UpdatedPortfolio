@@ -17,9 +17,16 @@ html, body {
 }
 
 #greeting{
-    font-family: 'Meddon', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     
 }
+.navbar-toggler {
+  display: none;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+}
+
 
 #image{
     width: 300px;
