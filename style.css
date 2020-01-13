@@ -16,8 +16,10 @@ html, body {
   background-color: gray;
 }
 
-#greeting{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+#hi{
+  margin-top: 20px; 
+  font-family: 'Meddon', cursive;
+  margin-left: 20px;
     
 }
 .navbar-toggler {
@@ -27,6 +29,10 @@ html, body {
   z-index: 2;
 }
 
+.photoWrapper{
+  display: flex;
+  flex-direction: row;
+}
 
 #image{
     width: 300px;
