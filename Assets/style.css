@@ -1,39 +1,69 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-  }
+html,
+body {
+  height: 100%;
+}
 
-  body {
-    display: flex;
-    flex-direction: column;
-  }
+/* I removed the flex column from the body - this was necessary to apply the margin to the bottom of the wrapper */
+/* body {
+  display: flex;
+  flex-direction: column;
+} */
 
-  .wrapper {
-    flex: 1 0 auto;
-  }
+.wrapper {
+  /* I'm not sure what "flex: 1 0 auto" was doing, but it wasn't helping */
+  /* flex: 1 0 auto; */
+  margin-bottom: 100px;
+  /* I applied a margin to the bottom of the wrapper so that your main content wouldn't be stuck behind the footer */
+}
 
-  #footer {
-    display: block;
-    height: 58px;
-    background-color: #444;
-  }
+#footer {
+  display: block;
+  height: 58px;
+  background-color: #444;
+  /* Give your footer an absolute position on the page - it will always be 0px from the bottom of the page, no matter where you scroll on the page */
+  position: fixed;
+  bottom: 0;
+  /* Bring your footer forward so that all other content will go behind it instead of overlapping */
+  z-index: 5;
+  /* Give footer a width of 100% so it stretches across the full page - this is responsive for mobile */
+  width: 100%;
+}
 
-#image{
-    width: 300px;
-    
+/* Added some space around the links in the footer so that they wouldn't be right up on each other */
+#footer a {
+  margin: 10px;
+}
+
+.submit-button {
+  background-color: gray;
+}
+
+#greeting {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navbar-toggler {
+  /* display: none; */
+  /* position: absolute;
+  right: 0px;
+  z-index: 2; */
+}
+
+#image {
+  width: 300px;
 }
 
 #aboutme {
-    justify-content: center;
+  justify-content: center;
 }
 
 .portfolioRow div {
-    margin: 10px;
+  margin: 10px;
 }
 
 .navbar {
-    background-color: #4aaaa5;
+  background-color: #4aaaa5;
 }
