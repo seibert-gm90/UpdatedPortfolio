@@ -1,82 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gabby (Seibert) Jones, Richmond, VA</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Meddon|Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <!--Added jQuery CDN -- this must be added, and it must be added BEFORE the Bootstrap CDN, for the navbar toggler (hamburger icon) to work properly-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <!--This is the Bootstrap CDN link that you had-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <!--I added the next script, which is from https://getbootstrap.com/, and it is what makes the navbar toggler interactive through javascrip/jquery-->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!--You'll need to make sure that both of the scripts I added are included on every page of your site - I only added them to index.html-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Meddon|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-right">
-        <!-- <a class="titleName" href="index.html">Gabby Jones</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="nav navbar-nav ml-auto">
-                <a class="nav-item nav-link active" href="index.html">About Me <span
-                        class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="contact.html">Contact </a>
-                <a class="nav-item nav-link" href="portfolio.html">Portfolio </a>
-            </div>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light justify-content-right"
+    >
+      <!--Added a .navbar-brand because this will change the alignment of the hamburger icon to the right side-->
+      <a class="navbar-brand" href="#">Gabby Jones</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="nav navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="index.html"
+            >About Me <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="contact.html">Contact </a>
+          <a class="nav-item nav-link" href="portfolio.html">Portfolio </a>
         </div>
-
+      </div>
     </nav>
     <div class="wrapper">
-       <div id="greeting"> <h1>Hi! I'm Gabby </h1></div>
+      <!--All rows should be inside containers or container-fluids or else they mess up the width of your page-->
+      <div class="container">
         <div class="row">
-            <div id="image" class=" col col-sm-12">
-                <img src="Assets/images/1.png" class="img-fluid" alt="Responsive image">
+          <div class="col">
+            <div id="greeting">
+              <h1>Hi! I'm Gabby</h1>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="image" class="col col-sm-12">
+            <img
+              src="Assets/images/1.png"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
         </div>
         <div id="aboutMe" class="row">
-            <div class="col-lg-12 col-sm-12">
-                <p>Gabby is a Full Stack Developer with experience in HTML, CSS, and JavaScript. She obtained her
-                    Bachelors
-                    degree in Biology from The University of Lynchburg (formerly Lynchburg College). She recently moved
-                    from
-                    the Seattle area back to Richmond Virginia. Gabby was born and raised in Virginia and enjoys city
-                    life,
-                    but also loves to get back to the farm during her time off. Gabby's background is in the medical
-                    field
-                    and most recently as a birth and postpartum doula. She strives to ensure human connection is not
-                    lost
-                    through technology. Gabby brings her unique experiences to the programming field. She is an expert
-                    problem solver and is incredibly persistent in any project she tackles.
-                    <br>
-                    In her downtime, Gabby enjoys going on adventures with her toddler son. She also enjoys exploring
-                    all
-                    Richmond has to offer. She especially enjoys trying new restuarants and thrift shopping. Download a copy of Gabby's resume <a href="Assets/resume2019.pdf" download="resume">here.
-                        
-                      </a>
-                </p>
-                
-            </div>
+          <div class="col-lg-12 col-sm-12">
+            <p>
+              Gabby is a Full Stack Developer with experience in HTML, CSS, and
+              JavaScript. She obtained her Bachelors degree in Biology from The
+              University of Lynchburg (formerly Lynchburg College). She recently
+              moved from the Seattle area back to Richmond Virginia. Gabby was
+              born and raised in Virginia and enjoys city life, but also loves
+              to get back to the farm during her time off. Gabby's background is
+              in the medical field and most recently as a birth and postpartum
+              doula. She strives to ensure human connection is not lost through
+              technology. Gabby brings her unique experiences to the programming
+              field. She is an expert problem solver and is incredibly
+              persistent in any project she tackles.
+            </p>
+            <p>
+              In her downtime, Gabby enjoys going on adventures with her toddler
+              son. She also enjoys exploring all Richmond has to offer. She
+              especially enjoys trying new restuarants and thrift shopping.
+              Download a copy of Gabby's resume
+              <a href="Assets/resume2019.pdf" download="resume">here. </a>
+            </p>
+          </div>
         </div>
-
-    </div></div>>
-    <div class="row">
-        <div class="col-lg col-md-12">
-            <footer class="d-flex align-items-center justify-content-center">
-                <a href="https://github.com/seibert-gm90">
-                    <img src="Assets/images/GitHub-Mark-32px.png" href="https://github.com/seibert-gm90"></a>
-
-                <a href="https://www.linkedin.com/in/gabrielle-jones-373ba8132/">
-                    <img src=Assets\images\LI-In-Bug.png>
-                </a>
-            </footer>
-        </div>
+      </div>
     </div>
-</body>
-
+    <!-- I removed an extra div closing tag that wasn't matched up to anything here - it was throwing the code indentation off-->
+    <!----------------------------->
+    <!-- <div class="row">
+                                <div class="col-lg col-md-12">
+                                    <footer class="d-flex align-items-center justify-content-center">
+                                        <a href="https://github.com/seibert-gm90">
+                                            <img src="Assets/images/GitHub-Mark-32px.png" href="https://github.com/seibert-gm90"></a>
+                            
+                                        <a href="https://www.linkedin.com/in/gabrielle-jones-373ba8132/">
+                                            <img src=Assets\images\LI-In-Bug.png>
+                                        </a>
+                                    </footer>
+                                </div>
+                            </div> -->
+    <!----------------------------->
+    <!-- Above lines of commented-out code are what you had for footer, below are my edits -->
+    <!-- Best practice with bootstrap is to have footer outside of the wrapper div, so I made the footer independent -->
+    <!-- I gave the footer an id of #footer and added styles to it - see style.css -->
+    <footer id="footer">
+      <!-- Generally the structure that bootstrap HTML elements will always take is: semantic tag (nav/header/section/footer) then .container then .row then .col, so I set up that structure for the footer -->
+      <div class="container">
+        <div class="row">
+          <!-- You applied the flexbox to the footer tag but it works best when applied to the col that the flexbox content is a direct child of, so I used your same classes ("d-flex align-items-center justify-content-center") here on this col -->
+          <div class="col d-flex align-items-center justify-content-center">
+            <a href="https://github.com/seibert-gm90">
+              <img
+                src="Assets/images/GitHub-Mark-32px.png"
+                href="https://github.com/seibert-gm90"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/gabrielle-jones-373ba8132/">
+              <img src="Assets\images\LI-In-Bug.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
