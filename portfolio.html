@@ -6,66 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gabby J Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/style.css" />
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-right">
-        <!-- <a class="navbar-brand" href="index.html">Gabby Jones</a> -->
+        <a class="navbar-brand" href="#">Gabby Jones</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="nav navbar-nav ml-auto">
-                <a class="nav-item nav-link active" href="index.html">About Me</a>
+                <a class="nav-item nav-link active" href="index.html">About Me </a>
                 <a class="nav-item nav-link" href="contact.html">Contact </a>
-                <a class="nav-item nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span>
+                <a class="nav-item nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
                 </a>
             </div>
         </div>
-
     </nav>
 
-    <div class="photoWrapper">
-        <div class="row">
-            <div class="col-md-3">
-                <div id="portfolioPhoto1">
-                    <img src="Assets/images/3.png" ><a href="https://seibert-gm90.github.io/homeworkthree/">
-                </div>
-                <div class="col-md-3">
-                    <div id="portfolioPhoto2">
-                        <img src="Assets/images/4.png" ><a
-                            href="https://seibert-gm90.github.io/multiplechoicequiz/">
+    <div class="container">
+        <div class="photoWrapper">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div id="portfolioPhoto1">
+                        <img src="Assets/images/3.png" class="img-fluid" alt="Responsive image">
+                        <a href="https://seibert-gm90.github.io/homeworkthree/">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-4">
+                    <div id="portfolioPhoto2">
+                        <img src="Assets/images/4.png" class="img-fluid" alt="Responsive image">
+                        <a href="https://seibert-gm90.github.io/multiplechoicequiz/">
+                    </div>
+                </div>
+                <div class="col-lg-4">
                     <div id="portfolioPhoto3">
-                        <img src="Assets/images/5.png" ><a
-                            href=" https://seibert-gm90.github.io/weatherapp/">
+                        <img src="Assets/images/5.png" class="img-fluid" alt="Responsive image">
+                            <a href="https://seibert-gm90.github.io/weatherapp/">
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
-    <div id="footerRow" class="row">
-        <div class="col-md-12">
-            <div class="footer-margin">
-                <footer class="card-footer bg-light footer-font-style text-muted footer-position text-center">
+    <footer id="footer">
+        <!-- Generally the structure that bootstrap HTML elements will always take is: semantic tag (nav/header/section/footer) then .container then .row then .col, so I set up that structure for the footer -->
+        <div class="container">
+            <div class="row">
+                <!-- You applied the flexbox to the footer tag but it works best when applied to the col that the flexbox content is a direct child of, so I used your same classes ("d-flex align-items-center justify-content-center") here on this col -->
+                <div class="col d-flex align-items-center justify-content-center">
                     <a href="https://github.com/seibert-gm90">
-                        <img src="Assets/images/GitHub-Mark-32px.png" href="https://github.com/seibert-gm90"></a>
-
-                    <a href="https://www.linkedin.com/in/gabrielle-jones-373ba8132/">
-                        <img src=Assets\images\LI-In-Bug.png>
+                        <img src="Assets/images/GitHub-Mark-32px.png" href="https://github.com/seibert-gm90" />
                     </a>
-                </footer>
+                    <a href="https://www.linkedin.com/in/gabrielle-jones-373ba8132/">
+                        <img src="Assets/images/LI-In-Bug.png" />
+                    </a>
+                </div>
             </div>
         </div>
-
-
+    </footer>
 </body>
 
 </html>

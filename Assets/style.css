@@ -32,8 +32,6 @@ body {
   /* Give footer a width of 100% so it stretches across the full page - this is responsive for mobile */
   width: 100%;
 }
-
-/* Added some space around the links in the footer so that they wouldn't be right up on each other */
 #footer a {
   margin: 10px;
 }
@@ -46,27 +44,17 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-/* These styles were messing up how your hamburger icon displayed so I removed them */
-/* .navbar-toggler {
-  display: none;
-  position: absolute;
-  right: 0px;
-  z-index: 2;
-} */
-
 #image {
   width: 300px;
+}
+
+.photoWrapper{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #aboutme {
   justify-content: center;
 }
 
-.portfolioRow div {
-  margin: 10px;
-}
-
-/* Not sure if you wanted the navbar to be teal or not but currently the color of the navbar is set by the classes "navbar-light bg-light" on the nav element in index.html so the style below wasn't doing anything */
-/* .navbar {
-  background-color: #4aaaa5;
-} */
